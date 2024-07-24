@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruchitha Lanka's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f0ec; /* Light beige background color */
+            color: #4a3b2d; /* Dark brown text color */
+        }
+
+        header {
+            background: #6f4e28; /* Dark brown background */
+            color: #fff;
+            padding: 1.5em;
+            text-align: center;
+            border-bottom: 5px solid #4a3b2d; /* Darker brown border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for header */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 1em 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #4a3b2d; /* Dark brown color on hover */
+            transform: translateY(-3px); /* Subtle lift effect */
+        }
+
+        main {
+            padding: 2em 10%;
+        }
+
+        section {
+            padding: 2em;
+            margin-bottom: 2em;
+            border-radius: 12px;
+            background: #fff; /* White background for sections */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 2em; /* Space between image and text */
+        }
+
+        #about {
+            flex-direction: row-reverse; /* Move image to the right */
+        }
+
+        .profile {
+            border-radius: 50%; /* Round profile image */
+            width: 180px;
+            height: 180px;
+            border: 6px solid #6f4e28; /* Dark brown border */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for profile picture */
+        }
+
+        .about-text {
+            flex: 2;
+        }
+
+        #about h2 {
+            color: #6f4e28; /* Dark brown color for heading */
+        }
+
+        .services-container, .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service, .skill {
+            background: #f9f5f1; /* Very light beige background for boxes */
+            padding: 2em;
+            width: calc(33% - 40px);
+            max-width: 320px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+            border-radius: 12px; /* Rounded corners */
+            color: #4a3b2d; /* Dark brown text color */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover, .skill:hover {
+            transform: translateY(-5px); /* Subtle lift effect */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+
+        .service h2, .skill h2 {
+            margin-top: 0;
+            color: #6f4e28; /* Dark brown color for headings */
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+            width: 100%;
+            max-width: 600px;
+        }
+
+        #contact input, #contact textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd; /* Light border */
+            border-radius: 8px; /* Rounded corners for inputs */
+            background: #f4f0ec; /* Light beige background for inputs */
+            color: #4a3b2d; /* Dark brown text color */
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        #contact input:focus, #contact textarea:focus {
+            border-color: #6f4e28; /* Dark brown border on focus */
+            box-shadow: 0 0 5px rgba(111, 78, 40, 0.2); /* Shadow on focus */
+        }
+
+        #contact button {
+            padding: 12px 25px;
+            border: none;
+            background: #6f4e28; /* Dark brown background */
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        #contact button:hover {
+            background: #4a3b2d; /* Darker brown on hover */
+            transform: translateY(-3px); /* Subtle lift effect */
+        }
+
+        footer {
+            background: #6f4e28; /* Dark brown background */
+            color: #fff;
+            text-align: center;
+            padding: 1.5em 0;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Shadow for footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Ruchitha Lanka</h1>
+    </header>
+
+    <main>
+        <section id="about">
+            <img src="ru.jpg" alt="Ruchitha Lanka" class="profile">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am an Engineering Student pursuing my B.Tech in Computer Science from KLUNIVERSITY with an aggregate of 9.0 CGPA. I am from Guntur and completed my school education from Sri Chaitanya. I am looking for a job in Web Development and Full Stack Development. Currently, I am doing a remote internship in Web Development and Designing. I have certifications in Python Programming (IITK), Web Development, C basics, etc.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <h1>Services</h1>
+            <div class="services-container">
+                <div class="service">
+                    <h2>Website Design</h2>
+                    <p>Creating and maintaining websites, including front-end and back-end development.</p>
+                </div>
+                <div class="service">
+                    <h2>UX/UI Design</h2>
+                    <p>Designing user interfaces and experiences to ensure a seamless and appealing user interaction.</p>
+                </div>
+                <div class="service">
+                    <h2>Digital Marketing</h2>
+                    <p>Promoting products or services through various digital channels to reach and engage customers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="skill">
+                    <h2>HTML & CSS</h2>
+                    <p>HTML for structuring web pages and CSS for styling them, ensuring a well-designed and responsive layout.</p>
+                </div>
+                <div class="skill">
+                    <h2>JavaScript</h2>
+                    <p>Enhancing web interactivity and functionality, both client-side and server-side using Node.js.</p>
+                </div>
+                <div class="skill">
+                    <h2>Python</h2>
+                    <p>A versatile programming language used in web development, data analysis, and more.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <form>
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <textarea placeholder="Enter Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ruchitha Lanka. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
